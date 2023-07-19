@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: nodejs 
+  labels:
+     app: nodejs 
+spec:
+  containers:
+  - name: appcontainer
+    image: thamizhnithiya/nodeapp:v1
+    ports:
+    - name: port
+      containerPort: 3000
